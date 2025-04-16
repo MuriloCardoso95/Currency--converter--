@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+/* Logo */
+.logo {
+    width: 100%; /* Usando 100% para que ocupe o máximo possível da tela */
+    max-width: 300px; /* Maximo de 300px para não ficar muito grande */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Main */
+main {
+    width: 100%; /* Usando 100% para ser mais fluído */
+    max-width: 375px; /* Limite de largura */
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+/* Labels */
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Inputs e Selects */
+select, input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px; /* Corrigi o border-radius que estava sem valor */
+    height: 48px;
+    width: 100%; /* Usando 100% para que ocupe a largura do container */
+    max-width: 300px; /* Máximo de 300px para não esticar demais */
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+/* Botões */
+button {
+    border-radius: 5px;
+    background: #772fd3;
+    width: 100%; /* Botão ocupa toda a largura */
+    max-width: 300px; /* Limita o tamanho máximo do botão */
+    border: none;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+/* Seções */
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seta-img {
+    margin: 15px 0;
+}
+
+.box-currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value, .cureny-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (celulares) */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 30px 15px; /* Ajustando o padding para telas pequenas */
+    }
+
+    .logo {
+        max-width: 200px; /* Reduzindo o tamanho da logo */
+    }
+
+    select, input, button {
+        width: 100%; /* Fazendo com que inputs e botões ocupem toda a largura da tela */
+        max-width: none; /* Retirando o limite de 300px */
+    }
+
+    section {
+        width: 100%; /* Garantindo que a seção ocupe toda a largura disponível */
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 250px; /* Ajuste da logo */
+    }
+
+    main {
+        padding: 40px 20px; /* Ajustando o padding para telas médias */
+    }
+
+    select, input, button {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media screen and (min-width: 1024px) {
+    .logo {
+        max-width: 300px; /* Logo permanece o mesmo tamanho em desktops */
+    }
+
+    main {
+        padding: 44px 24px 23px; /* O padding volta ao valor inicial */
+    }
+}
