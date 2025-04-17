@@ -5,11 +5,7 @@ Projeto desenvolvido no **DevClub** para praticar HTML, CSS e JavaScript criando
 Permite converter entre diversas moedas como **Real, Dólar, Euro, Libra e Bitcoin**, com interface intuitiva e responsiva.
 ---
 
-## 📸 Preview
 
-![preview](./assets//preview.png) 
-
----
 
 ## 🚀 Funcionalidades
 
