@@ -7,7 +7,7 @@ Permite converter entre diversas moedas como **Real, Dólar, Euro, Libra e Bitco
 
 ## 📸 Preview
 
-![preview]<img src="./assets/preview.png.png">
+![preview](./assets/preview.png.png) 
 
 ---
 
